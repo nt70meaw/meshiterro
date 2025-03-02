@@ -16,6 +16,7 @@ class PostimagesController < ApplicationController
 
   def show
     @post_image = PostImage.find(parmas[:id])
+    @post_comment = PostComment.new
   end
 
   def destroy
